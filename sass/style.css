@@ -1,0 +1,32 @@
+/* Colors */
+/* Font sizes */
+/* Font */
+body {
+  background: gray;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.main-nav li {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin: 15px auto;
+}
+/*# sourceMappingURL=style.css.map */
