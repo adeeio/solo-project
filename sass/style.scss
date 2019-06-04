@@ -2,6 +2,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto+Condensed&display=swap');
 
 
 body {
@@ -12,19 +13,37 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 4px solid;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    border: 4px solid red;
 }
 
 .navbar {
     width: 200px;
     height: 100%;
+    background: #191919;
+    }
+
+.logo-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
+.fa-bars {
+    color: #605f5f;
+    font-size: 20px;
+}
+
 .logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+    font-size: 26px;
     text-decoration: none;
+    color: #dbd9d9;
+    font-family: $logo-font;
 }
 
 .main-nav {
@@ -37,13 +56,27 @@ body {
 
 .nav-links {
     width: 100%;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.7);
     text-align: center;
+    display: flex;
     a {
-        display: block;
+        font-family: $paragraph-font;
+        padding: 10px;
+        flex: 1;
         text-decoration: none;
+        color: $paragraph-color;
+        &:hover, &:focus {
+            background: linear-gradient(90deg, orange, orange 2.9%, #282828 3%, #282828 100%);
+            transition: .5s;
+            color: #cecece;
+        }
     }
+   
+
+}
+
+.nav-underLine{
+    margin-top: 40px;
+    border-bottom: 1px solid $paragraph-color;
 }
 
 .active {
