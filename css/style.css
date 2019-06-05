@@ -2,83 +2,28 @@
 /* Font sizes */
 /* Font */
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto+Condensed&display=swap");
-body {
-  background: gray;
-}
+body { background: gray; }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+* { box-sizing: border-box; padding: 0; margin: 0; }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  height: 100vh;
-  border: 4px solid red;
-}
+.container { max-width: 1200px; width: 100%; height: 100vh; border: 4px solid red; }
 
-.navbar {
-  width: 200px;
-  height: 100%;
-  background: #191919;
-}
+.navbar { width: 200px; height: 100%; background: #191919; }
 
-.logo-box {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
+.logo-box { display: -ms-flexbox; display: flex; width: 100%; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-align: center; align-items: center; }
 
-.fa-bars {
-  color: #605f5f;
-  font-size: 20px;
-}
+.fa-bars { color: #605f5f; font-size: 20px; }
 
-.logo {
-  font-size: 26px;
-  text-decoration: none;
-  color: #dbd9d9;
-  font-family: "Gloria Hallelujah", cursive;
-}
+.logo { font-size: 26px; text-decoration: none; color: #dbd9d9; font-family: "Gloria Hallelujah", cursive; }
 
-.main-nav {
-  list-style-type: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+.main-nav { list-style-type: none; text-decoration: none; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: start; justify-content: flex-start; }
 
-.nav-links {
-  width: 100%;
-  text-align: center;
-  display: flex;
-}
+.nav-links { width: 100%; text-align: center; display: -ms-flexbox; display: flex; }
 
-.nav-links a {
-  font-family: "Roboto Condensed", sans-serif;
-  padding: 10px;
-  flex: 1;
-  text-decoration: none;
-  color: #605f5f;
-}
+.nav-links a { font-family: "Roboto Condensed", sans-serif; padding: 10px; -ms-flex: 1; flex: 1; text-decoration: none; color: #605f5f; }
 
-.nav-links a:hover, .nav-links a:focus {
-  background: linear-gradient(90deg, orange, orange 2.9%, #282828 3%, #282828 100%);
-  transition: .5s;
-  color: #cecece;
-}
+.nav-links a:hover, .nav-links a:focus { background: linear-gradient(90deg, orange, orange 2.9%, #282828 3%, #282828 100%); transition: .5s; color: #cecece; }
 
-.nav-underLine {
-  margin-top: 40px;
-  border-bottom: 1px solid #605f5f;
-}
+.nav-underLine { margin-top: 40px; border-bottom: 1px solid #605f5f; }
 
-.active {
-  display: block;
-}
-
-/*# sourceMappingURL=style.css.map */
+.active { display: block; }
