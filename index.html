@@ -9,39 +9,61 @@
     <meta name="author" content="Adrian Ostapkiewicz">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administration-Panel</title>
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="logo-box">
+            <a href="#" class="logo">Just do it</a>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+
+        <ul class="main-nav">
+            <li class="nav-links"><a class="active" href="#general"><span class="icon icon-general"></span>General</a></li>
+            <li class="nav-links"><a href="#details"><span class="icon icon-details"></span>Detalis</a></li>
+            <li class="nav-links"><a href="#links"><span class="icon icon-links"></span>Links</a></li>
+            <li class="nav-links"><a href="#banners"><span class="icon icon-banners"></span>Banners</a></li>
+            <li class="nav-links"><a href="#personal-data"><span class="icon icon-personaldata"></span>Personal data</a></li>
+            <li class="nav-links"><a href="#payout"><span class="icon icon-payout"></span>Payout</a></li>
+            <li class="nav-links"><a href="#postback"><span class="icon icon-postback"></span>Postback</a></li>
+        </ul>
+        <div class="nav-underLine"></div>
+    </nav>
     <div class="container">
-        <nav class="navbar">
-            <div class="logo-box">
-                <a href="#" class="logo">Just do it</a>
-                <span class="navbar-toggle" id="js-navbar-toggle">
-                    <i class="fas fa-bars"></i>
-                </span>
-            </div>
-    
-            <ul class="main-nav">
-                <li class="nav-links"><i class="arrow-down"></i><a class="active" href="#general">General</a></li>
-                <li class="nav-links"><a href="#detalis">Detalis</a></li>
-                <li class="nav-links"><a href="#links">Links</a></li>
-                <li class="nav-links"><a href="#banners">Banners</a></li>
-                <li class="nav-links"><a href="#personal-data">Personal data</a></li>
-                <li class="nav-links"><a href="#payout">Payout</a></li>
-                <li class="nav-links"><a href="#postback">Postback</a></li>
-            </ul>
-            <div class="nav-underLine"></div>
-    
-        </nav>
         <div class="topbar">
-    
+            <div class="topbar-element wallet">$1,500.00</div>
+            <div class="topbar-element bell">b</div>
+            <div class="topbar-element user">leonardo Diaprio</div>
+            <div class="topbar-element exit">q</div>
         </div>
         <div class="general">
-    
+            <div class="general-text">GENERAL STATISCTIC</div>
+            <div class="general-date">
+                <div class="date-columns">
+                    <input type="date" id="start" name="date-start" value="2019-05-05" min="2018-01-01"
+                        max="2020-01-01">
+                    <span class="date-splitLine"></span>
+                    <input type="date" id="end" name="date-end" value="2019-05-05" min="2018-01-01" max="2020-01-01">
+                </div>
+                <div class="date-button">B</div>
+
+            </div>
+            <div class="stats">
+                <div class="visits"></div>
+                <div class="ftd"></div>
+                <div class="netDeposit"></div>
+                <div class="turnOver"></div>
+            </div>
+            <div class="earning chart"></div>
+            <div class="diagram"></div>
         </div>
     </div>
-    
+
+
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
