@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap');
 
 body {
-  background: gray;
+  background: #F5F5F2;
   display: flex;
 }
 
@@ -15,6 +15,14 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100vh;
+}
+
+/* NAVBAR */
 
 .navbar {
   width: 250px;
@@ -94,60 +102,6 @@ body {
   height: 100%;
 }
 
-.topbar {
-  background: white;
-  height: 60px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  height: 100vh;
-}
-
-.topbar-element {
-  border: 3px solid red;
-  display: flex;
-  align-items: center;
-}
-
-.general {
-  background: white;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.general-date {
-  display: flex;
-  justify-content: center;
-}
-
-.date-columns {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid gray;
-  border-radius: 4px;
-  input {
-    border: none;
-  }
-}
-
-.date-splitLine {
-  border: 1px solid gray;
-  height: 100%;
-  margin: 0 15px;
-}
-
-.date-button {
-  display: flex;
-  align-items: center;
-}
-
 .nav-manager {
   font-family: $paragraph-font;
   color: $paragraph-color;
@@ -183,4 +137,58 @@ body {
   font-family: $paragraph-font;
   color: #56819f;
   margin-right: 30px;
+}
+
+/* TOPBAR */
+
+.topbar {
+  background: white;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topbar-element {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__icon {
+  color: $secondary-color;
+  margin: 5px;
+}
+
+.general {
+  background: white;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.general-date {
+  display: flex;
+  justify-content: center;
+}
+
+.date-columns {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  input {
+    border: none;
+  }
+}
+
+.date-splitLine {
+  border: 1px solid gray;
+  height: 100%;
+  margin: 0 15px;
+}
+
+.date-button {
+  display: flex;
+  align-items: center;
 }
