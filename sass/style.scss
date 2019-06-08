@@ -135,7 +135,7 @@ body {
 
 .chat-nick{
   font-family: $paragraph-font;
-  color: #56819f;
+  color: $user-color;
   margin-right: 30px;
 }
 
@@ -146,17 +146,74 @@ body {
   height: 50px;
   display: flex;
   justify-content: flex-end;
+  box-shadow: 1px 1px $page-shadow;
+  margin-right: 8px;
 }
 
 .topbar-element {
   display: flex;
   align-items: center;
+  color: $secondary-color;
+  font-size: 20px;
 }
 
 .topbar__icon {
   color: $secondary-color;
-  margin: 5px;
+  height: 100%;
+  padding: 15px 15px;
+  &:hover {
+    background: $primary-icon-hover;
+    transition: .5s;
+  }
 }
+
+.border--left {
+  border-left: 1px solid $page-shadow;
+}
+
+.border--right {
+  border-right: 1px solid $page-shadow;
+}
+
+.icon-notification {
+  position: relative;
+}
+
+.icon-notification::after {
+  background: $detali-color;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.cash {
+  font-weight: 600;
+  font-family: $paragraph-font;
+}
+
+.icon-arrow-down-small {
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+.profile__username {
+  font-size: 16px;
+  color: $user-color;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
 
 .general {
   background: white;

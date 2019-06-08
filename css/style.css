@@ -277,16 +277,66 @@ body {
   height: 50px;
   display: flex;
   justify-content: flex-end;
+  box-shadow: 1px 1px #E3E3E3;
+  margin-right: 8px;
 }
 
 .topbar-element {
   display: flex;
   align-items: center;
+  color: #ADADAD;
+  font-size: 20px;
 }
 
 .topbar__icon {
   color: #ADADAD;
-  margin: 5px;
+  height: 100%;
+  padding: 15px 15px;
+}
+
+.topbar__icon:hover {
+  background: #f5f5f2;
+  transition: .5s;
+}
+
+.border--left {
+  border-left: 1px solid #E3E3E3;
+}
+
+.border--right {
+  border-right: 1px solid #E3E3E3;
+}
+
+.icon-notification {
+  position: relative;
+}
+
+.icon-notification::after {
+  background: #F58220;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.cash {
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.icon-arrow-down-small {
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+.profile__username {
+  font-size: 16px;
+  color: #56819f;
+  padding-right: 10px;
 }
 
 .general {
