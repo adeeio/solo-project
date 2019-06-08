@@ -207,45 +207,72 @@ body {
   padding-right: 10px;
 }
 
-
-
-
-
-
-
-
+/* GENERAL */
 
 .general {
   background: white;
   margin: 10px;
   display: flex;
   flex-direction: column;
+  border: 1px solid $page-shadow;
+  box-shadow: 0 0 10px $page-shadow;
+  font-family: $paragraph-font;
 }
 
-.general-date {
-  display: flex;
-  justify-content: center;
+.general__text {
+  color: $secondary-color;
+  font-weight: 600;
+  padding: 15px;
+  border-bottom: 1px solid $page-shadow;
 }
 
-.date-columns {
+.general__date {
   display: flex;
   justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid gray;
-  border-radius: 4px;
-  input {
-    border: none;
+  align-items: center;
+  height: 111px;
+}
+
+.date__box {
+  display: flex;
+  border: 2px solid $page-shadow;
+  border-radius: 3px;
+  color: $secondary-color;
+  span {
+    padding: 10px 10px;
   }
 }
 
-.date-splitLine {
-  border: 1px solid gray;
-  height: 100%;
-  margin: 0 15px;
+.split__line {
+  border: 1px solid $page-shadow;
+  margin: 5px 0;
 }
 
-.date-button {
-  display: flex;
-  align-items: center;
+.start__date, .finish__date {
+  padding: 10px 70px 10px 15px;
+  text-align: left;
+  color: $dark-paragraph;
+  font-weight: 600;
 }
+
+.icon-calendar:hover {
+  background: $primary-icon-hover;
+  transition: .5s;
+}
+
+
+.icon-refresh {
+  margin: 0 15px;
+  background: $detali-color;
+  color: $page-shadow;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  &:hover {
+    background: $detali-color-hover;
+    color: #fff;
+    transition: .3s;
+  }
+}
+
+
