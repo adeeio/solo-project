@@ -544,12 +544,14 @@ body {
 
 /* MOBILES */
 @media (max-width: 767px) {
+  /* NAV BAR */
   .topbar {
     display: none;
   }
   .navbar {
     height: auto;
     width: 100%;
+    position: fixed;
   }
   .logo-box {
     justify-content: space-between;
@@ -579,6 +581,11 @@ body {
   }
   .visible {
     display: none;
+  }
+  /* BODY */
+  body {
+    padding: 10px;
+    padding-top: 50px;
   }
 }
 
