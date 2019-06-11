@@ -3,11 +3,10 @@
 @import "normalize";
 @import "layout";
 @import "Glyphter";
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap");
 
 body {
-  background: #F5F5F2;
+  background: #f5f5f2;
   display: flex;
   padding-top: 50px;
   width: 100%;
@@ -41,9 +40,21 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
+  a {
+    color: $dark-paragraph;
+    &:hover {
+      color: $primary-icon-hover;
+    }
+  }
+  span i {
+    &:hover {
+      color: $primary-icon-hover;
+    }
+  }
 }
+
 .fa-bars {
-  color: #605f5f;
+  color: $dark-paragraph;
   font-size: 20px;
 }
 
@@ -139,7 +150,7 @@ body {
   margin-left: 34px;
 }
 
-.chat-nick{
+.chat-nick {
   font-family: $paragraph-font;
   color: $user-color;
   margin-right: 30px;
@@ -173,7 +184,7 @@ body {
   padding: 15px 15px;
   &:hover {
     background: $primary-icon-hover;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -256,7 +267,7 @@ body {
   }
   &:hover {
     border: 2px solid gray;
-    transition: .4s;
+    transition: 0.4s;
     cursor: pointer;
   }
 }
@@ -266,7 +277,8 @@ body {
   margin: 5px 0;
 }
 
-.start__date, .finish__date {
+.start__date,
+.finish__date {
   padding: 10px 70px 10px 15px;
   text-align: left;
   color: $dark-paragraph;
@@ -275,9 +287,8 @@ body {
 
 .icon-calendar:hover {
   color: gray;
-  transition: .4s;
+  transition: 0.4s;
 }
-
 
 .icon-refresh {
   margin: 0 15px;
@@ -289,7 +300,7 @@ body {
   &:hover {
     background: $detali-color-hover;
     color: #fff;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
@@ -310,7 +321,7 @@ body {
   width: 250px;
   &:hover {
     border-bottom: 2px solid $secondary-color;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
@@ -340,20 +351,19 @@ body {
 .chart__box {
   display: flex;
   justify-content: center;
-
 }
 
 .chart {
-  background: #F3F3F1;
+  background: #f3f3f1;
   border-radius: 4px;
   display: flex;
   justify-content: space-around;
   padding: 10px;
   align-items: center;
   margin: 0 20px 30px;
-  &:hover{
+  &:hover {
     background: $page-shadow;
-    transition: .4s;
+    transition: 0.4s;
   }
   h3 {
     font-family: $paragraph-font;
@@ -371,7 +381,7 @@ body {
 }
 
 .dot {
-  background: #80BFCA;
+  background: #80bfca;
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -400,7 +410,47 @@ body {
   height: 400px;
 }
 
- //[class*="stats"] {
-  // border: 2px solid red;
- //}
+/* MOBILES */
 
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+
+  .navbar {
+    height: auto;
+    width: 100%;
+  }
+
+  .logo-box {
+    justify-content: space-between;
+    a {
+      margin-left: 20px;
+    }
+    span {
+      margin-right: 20px;
+    }
+  }
+
+  .mySidebar {
+    display: flex;
+    justify-content: center;
+    ul {
+      width: 100%;
+      li {
+        width: 100%;
+       a{
+        display: flex;
+        justify-content: center;
+       }
+      }
+    }
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .visible {
+    display: none;
+  }
+}

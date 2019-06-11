@@ -134,7 +134,7 @@
 }
 
 body {
-  background: #F5F5F2;
+  background: #f5f5f2;
   display: flex;
   padding-top: 50px;
   width: 100%;
@@ -169,8 +169,20 @@ body {
   padding: 10px 0;
 }
 
+.logo-box a {
+  color: #696969;
+}
+
+.logo-box a:hover {
+  color: #f5f5f2;
+}
+
+.logo-box span i:hover {
+  color: #f5f5f2;
+}
+
 .fa-bars {
-  color: #605f5f;
+  color: #696969;
   font-size: 20px;
 }
 
@@ -305,7 +317,7 @@ body {
 
 .topbar__icon:hover {
   background: #f5f5f2;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .border--left {
@@ -388,7 +400,7 @@ body {
 
 .date__box:hover {
   border: 2px solid gray;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
@@ -397,7 +409,8 @@ body {
   margin: 5px 0;
 }
 
-.start__date, .finish__date {
+.start__date,
+.finish__date {
   padding: 10px 70px 10px 15px;
   text-align: left;
   color: #696969;
@@ -406,7 +419,7 @@ body {
 
 .icon-calendar:hover {
   color: gray;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .icon-refresh {
@@ -421,7 +434,7 @@ body {
 .icon-refresh:hover {
   background: #FFa200;
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* GENERAL--STATS */
@@ -442,7 +455,7 @@ body {
 
 .stats--wrapper:hover {
   border-bottom: 2px solid #ADADAD;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .stats__info {
@@ -471,7 +484,7 @@ body {
 }
 
 .chart {
-  background: #F3F3F1;
+  background: #f3f3f1;
   border-radius: 4px;
   display: flex;
   justify-content: space-around;
@@ -482,7 +495,7 @@ body {
 
 .chart:hover {
   background: #E3E3E3;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .chart h3 {
@@ -501,7 +514,7 @@ body {
 }
 
 .dot {
-  background: #80BFCA;
+  background: #80bfca;
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -527,6 +540,46 @@ body {
 .diagram__img {
   width: 800px;
   height: 400px;
+}
+
+/* MOBILES */
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+  .navbar {
+    height: auto;
+    width: 100%;
+  }
+  .logo-box {
+    justify-content: space-between;
+  }
+  .logo-box a {
+    margin-left: 20px;
+  }
+  .logo-box span {
+    margin-right: 20px;
+  }
+  .mySidebar {
+    display: flex;
+    justify-content: center;
+  }
+  .mySidebar ul {
+    width: 100%;
+  }
+  .mySidebar ul li {
+    width: 100%;
+  }
+  .mySidebar ul li a {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .visible {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
