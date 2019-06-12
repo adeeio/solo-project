@@ -542,8 +542,122 @@ body {
   height: 400px;
 }
 
+.topbar-mobile {
+  display: none;
+}
+
 /* MOBILES */
-@media (max-width: 767px) {
+@media (max-width: 687px) {
+  /* NAV BAR */
+  .topbar {
+    display: none;
+  }
+  .navbar {
+    height: auto;
+    width: 100%;
+    position: fixed;
+  }
+  .logo-box {
+    justify-content: space-between;
+  }
+  .logo-box a {
+    margin-left: 40px;
+  }
+  .logo-box span {
+    margin-right: 20px;
+  }
+  .mySidebar {
+    display: flex;
+    justify-content: center;
+  }
+  .mySidebar ul {
+    width: 100%;
+  }
+  .mySidebar ul li {
+    width: 100%;
+  }
+  .mySidebar ul li a {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .visible {
+    display: none;
+  }
+  /* BODY */
+  body {
+    padding: 0;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .general {
+    margin: 2px;
+  }
+  .general__text h3 {
+    text-align: center;
+  }
+  .general__date {
+    flex-wrap: wrap;
+  }
+  .general__stats {
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+  .stats--wrapper {
+    padding: 20px 0;
+  }
+  .general__chart h3 {
+    text-align: center;
+    margin: 20px 5px;
+  }
+  .chart__box {
+    flex-wrap: wrap;
+  }
+  .chart h3 {
+    margin: 5px 5px;
+  }
+  .general__diagram {
+    padding: 10px 5px;
+  }
+  .topbar-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .bottom-bar {
+    width: 100%;
+  }
+  .topbar-element {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .topbar__mobileWrapper {
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: cneter;
+    width: 100%;
+    border: 2px solid #cecece;
+  }
+  .mobileWrapper--border {
+    border-bottom: none;
+  }
+  .cash {
+    align-self: center;
+  }
+  .profile__username {
+    align-self: center;
+  }
+  .icon-arrow-down-small {
+    padding-top: 25px;
+  }
+}
+
+/* SMALL DEVICES */
+@media (min-width: 688px) and (max-width: 767px) {
   /* NAV BAR */
   .topbar {
     display: none;
