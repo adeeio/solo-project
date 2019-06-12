@@ -416,7 +416,7 @@ body {
 
 /* MOBILES */
 
-@media (max-width: 687px){
+@media (max-width: 767px){
  /* NAV BAR */
 
  .topbar {
@@ -558,56 +558,14 @@ body {
 
 /* SMALL DEVICES */
 
-@media (min-width: 688px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 950px) {
 
-  /* NAV BAR */
-
-  .topbar {
-    display: none;
+  .general__stats {
+    padding: 50px 10px;
+    flex-direction: column;
   }
-
-  .navbar {
-    height: auto;
-    width: 100%;
-    position: fixed;
-  }
-
-  .logo-box {
-    justify-content: space-between;
-    a {
-      margin-left: 20px;
-    }
-    span {
-      margin-right: 20px;
-    }
-  }
-
-  .mySidebar {
-    display: flex;
-    justify-content: center;
-    ul {
-      width: 100%;
-      li {
-        width: 100%;
-       a{
-        display: flex;
-        justify-content: center;
-       }
-      }
-    }
-  }
-  .mobile-only {
-    display: none;
-  }
-
-  .visible {
-    display: none;
-  }
-
-  /* BODY */
-
-  body {
-    padding: 10px;
-    padding-top: 50px;
+ 
+  .stats--wrapper {
+    margin: 20px 0;
   }
 }
