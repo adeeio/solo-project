@@ -34,7 +34,7 @@ body {
   height: 100%;
 }
 
-.logo-box {
+.navbar__box {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -58,7 +58,7 @@ body {
   font-size: 20px;
 }
 
-.logo {
+.box__logo {
   font-size: 26px;
   text-decoration: none;
   color: #dbd9d9;
@@ -66,7 +66,7 @@ body {
   font-weight: 800;
 }
 
-.main-nav {
+.mySidebar__list {
   list-style-type: none;
   text-decoration: none;
   display: flex;
@@ -74,7 +74,7 @@ body {
   justify-content: flex-start;
 }
 
-.nav-links {
+.list__item {
   width: 100%;
   display: flex;
   align-items: center;
@@ -101,11 +101,11 @@ body {
   }
 }
 
-.icon {
+.item__icon {
   color: $paragraph-color;
 }
 
-.nav-underLine {
+.mobile__underLine {
   margin-top: 40px;
   border-bottom: 1px solid $paragraph-color;
 }
@@ -119,21 +119,21 @@ body {
   height: 100%;
 }
 
-.nav-manager {
+.mobile__manager {
   font-family: $paragraph-font;
   color: $paragraph-color;
   text-align: left;
   margin: 15px 0 0 15px;
 }
 
-.nav-chat {
+.mobile__chat {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 15px;
 }
 
-.chat-avatar {
+.chat__avatar {
   background-image: url("/images/90.jpg");
   height: 45px;
   width: 45px;
@@ -142,7 +142,7 @@ body {
   border-radius: 50%;
 }
 
-.avatar-dot {
+.avatar__dot {
   background: $active-green;
   height: 15px;
   width: 15px;
@@ -150,7 +150,7 @@ body {
   margin-left: 34px;
 }
 
-.chat-nick {
+.chat__nick {
   font-family: $paragraph-font;
   color: $user-color;
   margin-right: 30px;
@@ -171,14 +171,14 @@ body {
   width: calc(100% - 250px);
 }
 
-.topbar-element {
+.topbar__element {
   display: flex;
   align-items: center;
   color: $secondary-color;
   font-size: 20px;
 }
 
-.topbar__icon {
+.element__icon {
   color: $secondary-color;
   height: 100%;
   padding: 15px 15px;
@@ -186,6 +186,14 @@ body {
     background: $primary-icon-hover;
     transition: 0.5s;
   }
+}
+
+.element__icon--borderLeft {
+  border-left: 2px solid $page-shadow;
+}
+
+.element__icon--borderRight {
+    border-right: 2px solid $page-shadow;
 }
 
 .border--left {
@@ -212,7 +220,7 @@ body {
   right: 15px;
 }
 
-.cash {
+.element__cash {
   font-weight: 600;
   font-family: $paragraph-font;
 }
@@ -222,7 +230,7 @@ body {
   padding-top: 20px;
 }
 
-.profile__username {
+.element__username {
   font-size: 16px;
   color: $user-color;
   padding-right: 10px;
@@ -257,7 +265,7 @@ body {
   border-bottom: 2px solid $page-shadow;
 }
 
-.date__box {
+.date__boxDate {
   display: flex;
   border: 2px solid $page-shadow;
   border-radius: 3px;
@@ -272,13 +280,13 @@ body {
   }
 }
 
-.split__line {
+.boxDate__split {
   border: 1px solid $page-shadow;
   margin: 5px 0;
 }
 
-.start__date,
-.finish__date {
+.boxDate__start,
+.boxDate__finish {
   padding: 10px 70px 10px 15px;
   text-align: left;
   color: $dark-paragraph;
@@ -313,7 +321,7 @@ body {
   padding: 50px;
 }
 
-.stats--wrapper {
+.rowStats__statsBox--wrapper {
   border-bottom: 2px solid $page-shadow;
   padding: 10px 0;
   display: flex;
@@ -325,13 +333,13 @@ body {
   }
 }
 
-.stats__info {
+.statsBox__info {
   font-family: $paragraph-font;
   font-weight: 600;
   color: $secondary-color;
 }
 
-.stats__value {
+.statsBox__value {
   margin-left: 30px;
   color: $dark-paragraph;
   font-weight: 600;
@@ -348,12 +356,12 @@ body {
   }
 }
 
-.chart__box {
+.chart__boxChart {
   display: flex;
   justify-content: center;
 }
 
-.chart {
+.boxChart__btn {
   background: #f3f3f1;
   border-radius: 4px;
   display: flex;
@@ -373,14 +381,14 @@ body {
   }
 }
 
-.chart__earned {
+.boxChart__btn--earned {
   background: none;
   h3 {
     color: $user-color;
   }
 }
 
-.dot {
+.boxChart__dot {
   background: #80bfca;
   height: 15px;
   width: 15px;
@@ -388,11 +396,11 @@ body {
   margin-right: 15px;
 }
 
-.orange--dot {
+.boxChart__dot--orange {
   background: $detali-color;
 }
 
-.green--dot {
+.boxChart__dot--green {
   background: $active-green;
 }
 
@@ -410,7 +418,7 @@ body {
   height: 400px;
 }
 
-.topbar-mobile {
+.topbarMobile {
   display: none;
 }
 
@@ -429,7 +437,7 @@ body {
   position: fixed;
 }
 
-.logo-box {
+.navbar__box {
   justify-content: space-between;
   a {
     margin-left: 40px;
@@ -439,7 +447,7 @@ body {
   }
 }
 
-.mySidebar {
+.navbar__mySidebar {
   display: flex;
   justify-content: center;
   ul {
@@ -453,7 +461,7 @@ body {
     }
   }
 }
-.mobile-only {
+.mySidebar__mobile {
   display: none;
 }
 
@@ -489,7 +497,7 @@ body {
   padding: 50px 10px;
 }
 
-.stats--wrapper {
+.rowStats__statsBox--wrapper {
   padding: 20px 0;
 }
 
@@ -500,11 +508,11 @@ body {
   }
 }
 
-.chart__box {
+.chart__boxChart {
   flex-wrap: wrap;
 }
 
-.chart {
+.boxChart__btn {
   h3 {
     margin: 5px 5px;
   }
@@ -514,24 +522,22 @@ body {
   padding: 10px 5px;
 }
 
-.topbar-mobile {
+.topbarMobile {
   display: flex;
   width: 100%;
-  
 }
 
-.bottom-bar {
+.topbarMobile__bottomBar {
   width: 100%;
 }
 
-.topbar-element {
+.bottomBar__caddy {
   justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 
-.topbar__mobileWrapper {
-  margin: 0 5px;
+.caddy__element {
+  margin: 0 0;
   display: flex;
   justify-content: space-between;
   align-items: cneter;
@@ -539,15 +545,15 @@ body {
   border: 2px solid #cecece;
 }
 
-.mobileWrapper--border {
+.caddy__element--borderBottom {
   border-bottom: none;
 }
 
-.cash {
+.element__cash {
   align-self: center;
 }
 
-.profile__username {
+.element__username {
   align-self: center;
 }
 
@@ -565,7 +571,7 @@ body {
     flex-direction: column;
   }
  
-  .stats--wrapper {
+  .rowStats__statsBox--wrapper {
     margin: 20px 0;
   }
 }
