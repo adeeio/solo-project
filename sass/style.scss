@@ -34,7 +34,7 @@ body {
   height: 100%;
 }
 
-.navbar__box {
+.box {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -66,7 +66,7 @@ body {
   font-weight: 800;
 }
 
-.mySidebar__list {
+.list {
   list-style-type: none;
   text-decoration: none;
   display: flex;
@@ -74,7 +74,7 @@ body {
   justify-content: flex-start;
 }
 
-.list__item {
+.item {
   width: 100%;
   display: flex;
   align-items: center;
@@ -126,14 +126,14 @@ body {
   margin: 15px 0 0 15px;
 }
 
-.mobile__chat {
+.chat {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 15px;
 }
 
-.chat__avatar {
+.avatar {
   background-image: url("/images/90.jpg");
   height: 45px;
   width: 45px;
@@ -171,7 +171,7 @@ body {
   width: calc(100% - 250px);
 }
 
-.topbar__element {
+.element {
   display: flex;
   align-items: center;
   color: $secondary-color;
@@ -188,11 +188,11 @@ body {
   }
 }
 
-.element__icon--borderLeft {
+.icon--borderLeft {
   border-left: 2px solid $page-shadow;
 }
 
-.element__icon--borderRight {
+.icon--borderRight {
     border-right: 2px solid $page-shadow;
 }
 
@@ -248,7 +248,7 @@ body {
   font-family: $paragraph-font;
 }
 
-.general__text {
+.text {
   color: $secondary-color;
   font-weight: 600;
   padding: 15px;
@@ -257,7 +257,7 @@ body {
 
 /* GENERAL--DATE */
 
-.general__date {
+.date {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,7 +265,7 @@ body {
   border-bottom: 2px solid $page-shadow;
 }
 
-.date__boxDate {
+.boxDate {
   display: flex;
   border: 2px solid $page-shadow;
   border-radius: 3px;
@@ -314,14 +314,14 @@ body {
 
 /* GENERAL--STATS */
 
-.general__stats {
+.stats {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 50px;
 }
 
-.rowStats__statsBox--wrapper {
+.statsBox--wrapper {
   border-bottom: 2px solid $page-shadow;
   padding: 10px 0;
   display: flex;
@@ -348,7 +348,7 @@ body {
 
 /* GENERAL--CHART */
 
-.general__chart {
+.chart {
   h3 {
     color: $secondary-color;
     font-family: $paragraph-font;
@@ -356,12 +356,12 @@ body {
   }
 }
 
-.chart__boxChart {
+.boxChart {
   display: flex;
   justify-content: center;
 }
 
-.boxChart__btn {
+.btn {
   background: #f3f3f1;
   border-radius: 4px;
   display: flex;
@@ -381,14 +381,14 @@ body {
   }
 }
 
-.boxChart__btn--earned {
+.btn--earned {
   background: none;
   h3 {
     color: $user-color;
   }
 }
 
-.boxChart__dot {
+.btn__dot {
   background: #80bfca;
   height: 15px;
   width: 15px;
@@ -396,17 +396,17 @@ body {
   margin-right: 15px;
 }
 
-.boxChart__dot--orange {
+.dot--orange {
   background: $detali-color;
 }
 
-.boxChart__dot--green {
+.dot--green {
   background: $active-green;
 }
 
 /* GENERAL--DIAGRAM */
 
-.general__diagram {
+.diagram {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,7 +447,7 @@ body {
   }
 }
 
-.navbar__mySidebar {
+.mySidebar {
   display: flex;
   justify-content: center;
   ul {
@@ -461,7 +461,7 @@ body {
     }
   }
 }
-.mySidebar__mobile {
+.mobile {
   display: none;
 }
 
@@ -482,26 +482,26 @@ body {
   margin: 2px;
 }
 
-.general__text {
+.text {
   h3{
     text-align: center;
   }
 }
 
-.general__date {
+.date {
   flex-wrap: wrap;
 }
 
-.general__stats {
+.stats {
   flex-direction: column;
   padding: 50px 10px;
 }
 
-.rowStats__statsBox--wrapper {
+.statsBox--wrapper {
   padding: 20px 0;
 }
 
-.general__chart {
+.chart {
   h3{
     text-align: center;
     margin: 20px 5px;
@@ -518,7 +518,7 @@ body {
   }
 }
 
-.general__diagram {
+.diagram {
   padding: 10px 5px;
 }
 
@@ -527,16 +527,16 @@ body {
   width: 100%;
 }
 
-.topbarMobile__bottomBar {
+.bottomBar {
   width: 100%;
 }
 
-.bottomBar__caddy {
+.caddy {
   justify-content: center;
   flex-direction: column;
 }
 
-.caddy__element {
+.caddy-element {
   margin: 0 0;
   display: flex;
   justify-content: space-between;
@@ -545,12 +545,13 @@ body {
   border: 2px solid #cecece;
 }
 
-.caddy__element--borderBottom {
+.element--borderBottom {
   border-bottom: none;
 }
 
 .element__cash {
   align-self: center;
+  color: $paragraph-color;
 }
 
 .element__username {
@@ -566,12 +567,12 @@ body {
 
 @media (min-width: 768px) and (max-width: 950px) {
 
-  .general__stats {
+  .stats {
     padding: 50px 10px;
     flex-direction: column;
   }
  
-  .rowStats__statsBox--wrapper {
+  .statsBox--wrapper {
     margin: 20px 0;
   }
 }
