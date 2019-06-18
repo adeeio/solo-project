@@ -11,58 +11,74 @@
 
 <html>
     <body>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a
-                href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque
-            eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo
-            est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis
-            blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris
-            rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at
-            leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id.
-            Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-        <ul>
-            <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        </ul>
-        <ol>
-            <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        </ol>
-    </body>
-</html>
+        
+        <!--    NAVBAR    -->
+        <nav class="navbar" id="navbar">
+                <div class="box">
+                    <a href="#" class="box__logo">Just do it</a>
+                    <span class="burger" id="js-navbar-toggle">
+                        <i class="burger__item fas fa-bars"></i>
+                    </span>
+                </div>
+                <div class="mySidebar" id="mySidebar">
+                    <ul class="list">
+                        <li class="item"><a class="active" href="#general"><span
+                                    class="item__icon icon-general"></span>General</a>
+                        </li>
+                        <li class="item"><a href="#details"><span class="item__icon icon-details"></span>Detalis</a></li>
+                        <li class="item"><a href="#links"><span class="item__icon icon-links"></span>Links</a></li>
+                        <li class="item"><a href="#banners"><span class="item__icon icon-banners"></span>Banners</a></li>
+                        <li class="item"><a href="#personal-data"><span class="item__icon icon-personaldata"></span>Personal
+                                data</a>
+                        </li>
+                        <li class="item"><a href="#payout"><span class="item__icon icon-payout"></span>Payout</a></li>
+                        <li class="item"><a href="#postback"><span class="item__icon icon-postback"></span>Postback</a></li>
+                    </ul>
+                    <div class="mobile">
+                        <div class="mobile__underLine"></div>
+                        <div class="mobile__manager">YOUR MANAGER</div>
+                        <div class="chat">
+                            <div class="avatar">
+                                <div class="avatar__dot"></div>
+                            </div>
+                            <div class="chat__nick">Mikhael E.</div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+            </nav>
 
-<body>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a
-            href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque
-        eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo
-        est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis
-        blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris
-        rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at
-        leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id.
-        Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-    <ul>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    </ul>
-    <ol>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    </ol>
+
+
+             <!--TOP BAR-->
+
+    <div class="topbar">
+            <div class="element">
+                <span class="element__icon  icon--borderLeft icon-wallet"></span>
+                <span class="element__cash">$1,500.00</span>
+                <span class="element__icon icon--borderRight icon-arrow-down-small"></span>
+                <span class="element__icon icon--borderRight icon-notification"></span>
+                <span class="element__icon icon-profile"></span>
+                <span class="element__username">Leonardo Dicaprio</span>
+                <span class="element__icon icon--borderLeft icon-quit"></span>
+            </div>
+        </div>
+
+            <!--  BOXDATE  -->
+        <div class="boxDate">
+                <div class="boxDate__start">16.05.2016</div>
+                <div class="boxDate__split"></div>
+                <div class="boxDate__finish">16.05.2016</div>
+                <span class="boxDate__icon icon-calendar"></span>
+            </div>
+
+            <!-- BTN -->
+            <div class="btn">
+                    <span class="btn__dot"></span>
+                    <h3>Signups</h3>
+                </div>
+
+
 </body>
