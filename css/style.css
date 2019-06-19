@@ -507,6 +507,7 @@ body {
   padding: 10px;
   align-items: center;
   margin: 0 20px 30px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -574,6 +575,7 @@ body {
   height: 40px;
   background: #f58220;
   color: #f5f5f2;
+  border: #f5f5f2;
 }
 
 .btn--primary:hover {
@@ -597,18 +599,21 @@ table {
   overflow-x: auto;
 }
 
-.myTable, .table-row {
+.myTable,
+.table-row {
   border: 2px solid #E3E3E3;
   border-right: none;
   border-left: none;
   border-collapse: collapse;
 }
 
-.table-row, td {
+.table-row,
+td {
   padding: 15px 30px;
 }
 
-.table-row:hover, td:hover {
+.table-row:hover,
+td:hover {
   background: #f5f5f2;
 }
 
@@ -633,6 +638,40 @@ table {
 
 .icon-trash:hover {
   color: red;
+}
+
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.form-box h4,
+.form-box input {
+  flex: 1;
+  margin: 0 30px;
+  padding: 15px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  color: #696969;
+}
+
+.form-box input {
+  border: 2px solid #E3E3E3;
+  border-radius: 4px;
+  flex: 3;
+  font-size: 20px;
+}
+
+.form-box input:hover {
+  border: 2px solid gray;
+  transition: 0.4s;
+}
+
+.border--bottom {
+  border-bottom: 2px solid #E3E3E3;
+  padding: 30px 0;
 }
 
 /* MOBILES */
@@ -746,7 +785,8 @@ table {
   .table {
     overflow: hidden;
   }
-  .table-row, td {
+  .table-row,
+  td {
     padding: 15px 5px;
   }
 }
@@ -760,7 +800,8 @@ table {
   .statsBox--wrapper {
     margin: 20px 0;
   }
-  .table-row, td {
+  .table-row,
+  td {
     padding: 15px 5px;
   }
 }

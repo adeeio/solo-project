@@ -154,7 +154,7 @@ body {
   font-family: $paragraph-font;
   color: $user-color;
   margin-right: 30px;
-  &:hover{
+  &:hover {
     color: $user-color--hover;
   }
 }
@@ -237,7 +237,7 @@ body {
   font-size: 16px;
   color: $user-color;
   padding-right: 10px;
-  &:hover{
+  &:hover {
     color: $user-color--hover;
   }
 }
@@ -375,6 +375,7 @@ body {
   padding: 10px;
   align-items: center;
   margin: 0 20px 30px;
+  cursor: pointer;
   &:hover {
     background: $page-shadow;
     transition: 0.4s;
@@ -441,6 +442,7 @@ body {
   height: 40px;
   background: $detali-color;
   color: $primary-icon-hover;
+  border: $primary-icon-hover;
   &:hover {
     background: $detali-color-hover;
     transition: 0.5s;
@@ -462,14 +464,16 @@ table {
   align-items: center;
   overflow-x: auto;
 }
-.myTable, .table-row {
+.myTable,
+.table-row {
   border: 2px solid $page-shadow;
   border-right: none;
   border-left: none;
   border-collapse: collapse;
 }
 
-.table-row , td{
+.table-row,
+td {
   padding: 15px 30px;
   &:hover {
     background: $primary-icon-hover;
@@ -485,7 +489,7 @@ table {
 .link--style {
   text-decoration: none;
   color: $user-color;
-  &:hover{
+  &:hover {
     color: $user-color--hover;
   }
 }
@@ -502,6 +506,39 @@ table {
   }
 }
 
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  h4,
+  input {
+    flex: 1;
+    margin: 0 30px;
+    padding: 15px 0;
+    font-family: $paragraph-font;
+    font-weight: 600;
+    color: $dark-paragraph;
+  }
+}
+
+.form-box {
+  input {
+    border: 2px solid $page-shadow;
+    border-radius: 4px;
+    flex: 3;
+    font-size: 20px;
+    &:hover {
+      border: 2px solid gray;
+      transition: 0.4s;
+    }
+  }
+}
+
+.border--bottom {
+  border-bottom: 2px solid $page-shadow;
+  padding: 30px 0;
+}
 
 /* MOBILES */
 
@@ -647,7 +684,8 @@ table {
     overflow: hidden;
   }
 
-  .table-row, td {
+  .table-row,
+  td {
     padding: 15px 5px;
   }
 }
@@ -664,8 +702,8 @@ table {
     margin: 20px 0;
   }
 
-  .table-row, td {
+  .table-row,
+  td {
     padding: 15px 5px;
   }
 }
-
