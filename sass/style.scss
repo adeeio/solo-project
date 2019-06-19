@@ -154,6 +154,9 @@ body {
   font-family: $paragraph-font;
   color: $user-color;
   margin-right: 30px;
+  &:hover{
+    color: $user-color--hover;
+  }
 }
 
 /* TOPBAR */
@@ -234,6 +237,9 @@ body {
   font-size: 16px;
   color: $user-color;
   padding-right: 10px;
+  &:hover{
+    color: $user-color--hover;
+  }
 }
 
 /* GENERAL */
@@ -422,6 +428,81 @@ body {
   display: none;
 }
 
+/* BANNERS */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--primary {
+  width: 100px;
+  height: 40px;
+  background: $detali-color;
+  color: $primary-icon-hover;
+  &:hover {
+    background: $detali-color-hover;
+    transition: 0.5s;
+  }
+}
+
+.btn--position {
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  margin: 0 10%;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+.myTable, .table-row {
+  border: 2px solid $page-shadow;
+  border-right: none;
+  border-left: none;
+  border-collapse: collapse;
+}
+
+.table-row , td{
+  padding: 15px 30px;
+  &:hover {
+    background: $primary-icon-hover;
+  }
+}
+
+.table-text {
+  font-family: $paragraph-font;
+  font-weight: 600;
+  color: $dark-paragraph;
+}
+
+.link--style {
+  text-decoration: none;
+  color: $user-color;
+  &:hover{
+    color: $user-color--hover;
+  }
+}
+
+.icon-links {
+  &:hover {
+    color: $detali-color-hover;
+  }
+}
+
+.icon-trash {
+  &:hover {
+    color: $danger;
+  }
+}
+
+
 /* MOBILES */
 
 @media (max-width: 767px) {
@@ -561,6 +642,14 @@ body {
   .icon-arrow-down-small {
     padding-top: 25px;
   }
+
+  .table {
+    overflow: hidden;
+  }
+
+  .table-row, td {
+    padding: 15px 5px;
+  }
 }
 
 /* SMALL DEVICES */
@@ -574,4 +663,9 @@ body {
   .statsBox--wrapper {
     margin: 20px 0;
   }
+
+  .table-row, td {
+    padding: 15px 5px;
+  }
 }
+

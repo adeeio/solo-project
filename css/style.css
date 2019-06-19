@@ -288,6 +288,10 @@ body {
   margin-right: 30px;
 }
 
+.chat__nick:hover {
+  color: #7ec9ff;
+}
+
 /* TOPBAR */
 .topbar {
   background: white;
@@ -366,6 +370,10 @@ body {
   font-size: 16px;
   color: #56819f;
   padding-right: 10px;
+}
+
+.element__username:hover {
+  color: #7ec9ff;
 }
 
 /* GENERAL */
@@ -554,6 +562,79 @@ body {
   display: none;
 }
 
+/* BANNERS */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--primary {
+  width: 100px;
+  height: 40px;
+  background: #f58220;
+  color: #f5f5f2;
+}
+
+.btn--primary:hover {
+  background: #FFa200;
+  transition: 0.5s;
+}
+
+.btn--position {
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  margin: 0 10%;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.myTable, .table-row {
+  border: 2px solid #E3E3E3;
+  border-right: none;
+  border-left: none;
+  border-collapse: collapse;
+}
+
+.table-row, td {
+  padding: 15px 30px;
+}
+
+.table-row:hover, td:hover {
+  background: #f5f5f2;
+}
+
+.table-text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  color: #696969;
+}
+
+.link--style {
+  text-decoration: none;
+  color: #56819f;
+}
+
+.link--style:hover {
+  color: #7ec9ff;
+}
+
+.icon-links:hover {
+  color: #FFa200;
+}
+
+.icon-trash:hover {
+  color: red;
+}
+
 /* MOBILES */
 @media (max-width: 767px) {
   /* NAV BAR */
@@ -662,6 +743,12 @@ body {
   .icon-arrow-down-small {
     padding-top: 25px;
   }
+  .table {
+    overflow: hidden;
+  }
+  .table-row, td {
+    padding: 15px 5px;
+  }
 }
 
 /* SMALL DEVICES */
@@ -672,6 +759,9 @@ body {
   }
   .statsBox--wrapper {
     margin: 20px 0;
+  }
+  .table-row, td {
+    padding: 15px 5px;
   }
 }
 
