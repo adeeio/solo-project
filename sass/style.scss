@@ -508,26 +508,37 @@ td {
 
 .form-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px 10px;
-  h4,
-  input {
+  padding: 20px 0 0;
+  i {
+    width: 200px;
+  }
+  h4 {
     flex: 1;
-    margin: 0 30px;
-    padding: 15px 0;
     font-family: $paragraph-font;
     font-weight: 600;
     color: $dark-paragraph;
   }
 }
 
+.column {
+  flex-direction: column;
+}
+
+
 .form-box {
+  width: 100%;
+  max-width: 450px;
   input {
+    height: 41px;
+    width: 309px;
     border: 2px solid $page-shadow;
     border-radius: 4px;
-    flex: 3;
     font-size: 20px;
+    font-family: $paragraph-font;
+    color: $paragraph-color;
+    font-size: $paragraph-primary--small;
     &:hover {
       border: 2px solid gray;
       transition: 0.4s;

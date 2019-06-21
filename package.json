@@ -8,6 +8,8 @@
     "init:dires": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "test": "npm-run-all test:*",
+    "test:html": "globstar nu-html-checker *.html",
     "build": "npm-run-all build:*",
     "build:clean": "rimraf css/*.css",
     "build:sass": "node-sass --output-style compact -o css sass",
