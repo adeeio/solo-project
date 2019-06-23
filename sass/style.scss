@@ -600,10 +600,12 @@ td {
 
 .btn-box{
   margin: 0 3px 20px;
+  background: inherit;
   h4{
     white-space: nowrap;
     font-size: $paragraph-primary--small;
     font-family: $paragraph-font;
+    color: $paragraph-color;
   }
   i{
     visibility: hidden; 
@@ -624,7 +626,6 @@ td {
 
 .pager__item {
   list-style-type: none;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -644,10 +645,48 @@ td {
   }
 }
 
+.payout-btn {
+  @extend .btn-box;
+
+}
+.payout {
+  @extend .detail;
+  margin: 30px 10px 0;
+}
+.payout,
+.payout-table {
+  @extend .detail-table;
+  border: none;
+}
+.payout-table,
+.payout-row {
+  @extend .detail-row;
+}
+
+.payout-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payout__text {
+  @extend .detail__text;
+  width: 100px;
+  white-space: nowrap;
+}
+
 .active {
   background: $primary-icon-hover;
 }
 
+.payout-head {
+  @extend .table-head;
+  flex: none;
+  width: 110px;
+}
+
+#payout-row {
+  @extend #detail-row;
+}
 
 
 
@@ -747,6 +786,10 @@ td {
     }
   }
 
+  .btn {
+    height: 50px;
+  }
+
   .diagram {
     padding: 10px 5px;
   }
@@ -809,6 +852,10 @@ td {
     input {
       width: 100%;
     }
+  }
+
+  .payout {
+    overflow-x: auto;
   }
 }
 

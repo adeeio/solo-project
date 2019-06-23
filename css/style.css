@@ -689,7 +689,7 @@ td:hover {
 }
 
 /* DETAILS */
-.detail {
+.detail, .payout {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -698,12 +698,16 @@ td:hover {
   overflow: auto;
 }
 
-.detail-table {
+.detail-table, .payout,
+.payout-table {
   margin: 30px 10px;
 }
 
-.detail-table,
-.detail-row {
+.detail-table, .payout,
+.payout-table,
+.detail-row,
+.payout-table,
+.payout-row {
   border: 2px solid #E3E3E3;
   border-right: none;
   border-left: none;
@@ -711,43 +715,49 @@ td:hover {
   overflow-x: hidden;
 }
 
-.detail__text {
+.detail__text, .payout__text {
   font-size: 14px;
   text-align: center;
   padding: 15px 5px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.detail-table,
+.detail-table, .payout,
+.payout-table,
 .detail-row,
-.table-head {
+.payout-table,
+.payout-row,
+.table-head,
+.payout-head {
   flex: 1;
   border-top: none;
 }
 
-#detail-row:hover {
+#detail-row:hover, #payout-row:hover {
   background: #f5f5f2;
   cursor: pointer;
 }
 
-.btn-box {
+.btn-box, .payout-btn {
   margin: 0 3px 20px;
+  background: inherit;
 }
 
-.btn-box h4 {
+.btn-box h4, .payout-btn h4 {
   white-space: nowrap;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
+  color: #605f5f;
 }
 
-.btn-box i {
+.btn-box i, .payout-btn i {
   visibility: hidden;
   font-size: 10px;
   padding-top: 3px;
   padding-left: 5px;
 }
 
-.btn-box:hover .header__icon {
+.btn-box:hover .header__icon, .payout-btn:hover .header__icon {
   visibility: visible;
 }
 
@@ -780,8 +790,32 @@ td:hover {
   color: #7ec9ff;
 }
 
+.payout {
+  margin: 30px 10px 0;
+}
+
+.payout,
+.payout-table {
+  border: none;
+}
+
+.payout-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payout__text {
+  width: 100px;
+  white-space: nowrap;
+}
+
 .active {
   background: #f5f5f2;
+}
+
+.payout-head {
+  flex: none;
+  width: 110px;
 }
 
 /* MOBILES */
@@ -857,6 +891,9 @@ td:hover {
   .boxChart__btn h3 {
     margin: 5px 5px;
   }
+  .btn {
+    height: 50px;
+  }
   .diagram {
     padding: 10px 5px;
   }
@@ -908,6 +945,9 @@ td:hover {
   }
   .form-box input {
     width: 100%;
+  }
+  .payout {
+    overflow-x: auto;
   }
 }
 
