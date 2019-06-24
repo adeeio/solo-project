@@ -9,7 +9,6 @@
     <meta name="author" content="Adrian Ostapkiewicz">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <title>Administration-Panel</title>
 
 </head>
@@ -75,7 +74,7 @@
 
         <!--GENERAL-->
 
-        <div class="general">
+        <div class="general" id="general">
             <div class="text">
                 <h3>GENERAL STATISCTIC</h3>
             </div>
@@ -110,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="chart">
+            <!--<div class="chart">
                 <h3>Earnigns chart</h3>
                 <div class="boxChart">
                     <div class="btn">
@@ -126,20 +125,14 @@
                         <h3>Earned</h3>
                     </div>
                 </div>
-            </div>
-            <div class="diagram"><canvas id="myChart">
-
-            </canvas></div>
-            
-            <!--<div class="diagram">
-                <div class="diagram__img">
-                    <img src="/images/diagram.png" width="100%" height="100%">
-                </div>
             </div>-->
+            <div class="diagram">
+                <canvas width="100%" height="70%" id="myChart"></canvas>
+            </div>
         </div>
 
         <!-- BANNERS -->
-        <div class="general">
+        <div class="general" id="banners">
             <div class="text">
                 <h3>BANNERS</h3>
             </div>
@@ -193,7 +186,7 @@
         </div>
 
         <!-- PERSONAL DATA-->
-        <div class="general">
+        <div class="general" id="personal-data">
             <div class="text">
                 <h3>PERSONAL DATA</h3>
             </div>
@@ -204,7 +197,8 @@
                         <i>
                             <h4>Name</h4>
                         </i>
-                        <input type="text" name="firstname" placeholder="Leonardo" required minlength="2" maxlength="16">
+                        <input type="text" name="firstname" placeholder="Leonardo" required minlength="2"
+                            maxlength="16">
                     </div>
                     <div class="form-box">
                         <i>
@@ -222,7 +216,8 @@
                         <i>
                             <h4>Phone number</h4>
                         </i>
-                        <input type="number" name="phoneNumber" placeholder="+ 1 432 555 00 44" min="12" max="18" pattern="\d+">
+                        <input type="number" name="phoneNumber" placeholder="+ 1 432 555 00 44" min="12" max="18"
+                            pattern="\d+">
                     </div>
 
                 </div>
@@ -279,7 +274,7 @@
                 </div>
             </form>
         </div>
-        <div class="general">
+        <div class="general" id="details">
             <div class="text">
                 <h3>DETAIL STATISTIC</h3>
             </div>
@@ -484,7 +479,7 @@
 
         </div>
 
-        <div class="general">
+        <div class="general" id="payout">
             <div class="text">
                 <h3>PAYOUT HISTORY</h3>
             </div>
@@ -611,7 +606,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>

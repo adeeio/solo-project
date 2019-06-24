@@ -420,10 +420,6 @@ body {
   padding: 40px;
 }
 
-.diagram__img {
-  width: 800px;
-  height: 400px;
-}
 
 .topbarMobile {
   display: none;
@@ -878,6 +874,7 @@ input[type="email"] {
 /* SMALL DEVICES */
 
 @media (min-width: 768px) and (max-width: 950px) {
+
   .stats {
     padding: 50px 10px;
     flex-direction: column;
