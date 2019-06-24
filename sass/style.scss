@@ -546,6 +546,22 @@ td {
   }
 }
 
+input[type="email"],
+input[type="number"],
+input[type="text"] {
+  -webkit-appearance: none;
+  
+}
+
+input[type="email"] {
+&:valid {
+  border-color: green;
+}
+&:invalid {
+  border-color: red;
+}
+}
+
 .border--bottom {
   border-bottom: 2px solid $page-shadow;
   padding: 30px 0;

@@ -9,6 +9,7 @@
     <meta name="author" content="Adrian Ostapkiewicz">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <title>Administration-Panel</title>
 
 </head>
@@ -126,11 +127,15 @@
                     </div>
                 </div>
             </div>
-            <div class="diagram">
+            <div class="diagram"><canvas id="myChart">
+
+            </canvas></div>
+            
+            <!--<div class="diagram">
                 <div class="diagram__img">
                     <img src="/images/diagram.png" width="100%" height="100%">
                 </div>
-            </div>
+            </div>-->
         </div>
 
         <!-- BANNERS -->
@@ -192,32 +197,32 @@
             <div class="text">
                 <h3>PERSONAL DATA</h3>
             </div>
-            <form id="myform" action="#">
+            <form id="myform" action="#" method="POST">
                 <div class="center column border--bottom">
 
                     <div class="form-box">
                         <i>
                             <h4>Name</h4>
                         </i>
-                        <input type="text" name="firstname" value="Leonardo">
+                        <input type="text" name="firstname" placeholder="Leonardo" required minlength="2" maxlength="16">
                     </div>
                     <div class="form-box">
                         <i>
                             <h4>Surname</h4>
                         </i>
-                        <input type="text" name="surname" value="Dicaprio">
+                        <input type="text" name="surname" placeholder="Dicaprio" required minlength="2" maxlength="22">
                     </div>
                     <div class="form-box">
                         <i>
                             <h4>E-mail</h4>
                         </i>
-                        <input type="text" name="email" value="leo@gmail.com">
+                        <input type="email" name="email" placeholder="leo@gmail.com" required>
                     </div>
                     <div class="form-box">
                         <i>
                             <h4>Phone number</h4>
                         </i>
-                        <input type="number" name="phoneNumber" value="+ 1 432 555 00 44">
+                        <input type="number" name="phoneNumber" placeholder="+ 1 432 555 00 44" min="12" max="18" pattern="\d+">
                     </div>
 
                 </div>
@@ -227,7 +232,7 @@
                         <i>
                             <h4>Skype</h4>
                         </i>
-                        <input type="text" name="skype" value="Leonardo.D">
+                        <input type="email" name="skype" placeholder="Leonardo.D">
                     </div>
                     <div class="form-box">
                         <i>
@@ -239,7 +244,7 @@
                         <i>
                             <h4>Msn</h4>
                         </i>
-                        <input type="text" name="msn">
+                        <input type="email" name="msn">
                     </div>
 
                 </div>
@@ -259,13 +264,13 @@
                         <i>
                             <h4>Password</h4>
                         </i>
-                        <input type="password" name="password">
+                        <input type="password" name="password" required>
                     </div>
                     <div class="form-box">
                         <i>
                             <h4>Repeat</h4>
                         </i>
-                        <input type="password" name="repeat">
+                        <input type="password" name="repeat" required>
                     </div>
 
                 </div>
@@ -606,6 +611,7 @@
             </div>
         </div>
     </div>
+    
     <script src="js/script.js"></script>
 
 </body>
