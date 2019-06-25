@@ -507,9 +507,6 @@ td {
   justify-content: space-around;
   align-items: center;
   padding: 20px 0 0;
-  i {
-    width: 200px;
-  }
   h4 {
     flex: 1;
     font-family: $paragraph-font;
@@ -603,7 +600,7 @@ input[type="email"] {
   border-top: none;
 }
 
-#detail-row {
+[id*="detail-row"] {
   &:hover{
     background: $primary-icon-hover;
     cursor: pointer;
@@ -613,7 +610,7 @@ input[type="email"] {
 .btn-box{
   margin: 0 3px 20px;
   background: inherit;
-  h4{
+  span{
     white-space: nowrap;
     font-size: $paragraph-primary--small;
     font-family: $paragraph-font;
@@ -696,8 +693,11 @@ input[type="email"] {
   width: 110px;
 }
 
-#payout-row {
-  @extend #detail-row;
+[id*="payout-row"] {
+  &:hover{
+    background: $primary-icon-hover;
+    cursor: pointer;
+  }
 }
 
 
@@ -857,10 +857,6 @@ input[type="email"] {
 
   .form-box {
     flex-direction: column;
-    i{
-      text-align: center;
-      margin-bottom: 10px;
-    }
     input {
       width: 100%;
     }

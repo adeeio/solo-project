@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>solo-project</title>
@@ -9,8 +9,6 @@
     <meta name="author" content="Adrian Ostapkiewicz">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Administration-Panel</title>
-
 </head>
 
 <body class="general-statistic-template">
@@ -127,7 +125,7 @@
                 </div>
             </div>-->
             <div class="diagram">
-                <canvas width="100%" height="70%" id="myChart"></canvas>
+                <canvas id="myChart"></canvas>
             </div>
         </div>
 
@@ -192,82 +190,53 @@
             </div>
             <form id="myform" action="#" method="POST">
                 <div class="center column border--bottom">
-
                     <div class="form-box">
-                        <i>
-                            <h4>Name</h4>
-                        </i>
+                        <h4>Name</h4>
                         <input type="text" name="firstname" placeholder="Leonardo" required minlength="2"
                             maxlength="16">
                     </div>
                     <div class="form-box">
-                        <i>
-                            <h4>Surname</h4>
-                        </i>
+                        <h4>Surname</h4>
                         <input type="text" name="surname" placeholder="Dicaprio" required minlength="2" maxlength="22">
                     </div>
                     <div class="form-box">
-                        <i>
-                            <h4>E-mail</h4>
-                        </i>
+                        <h4>E-mail</h4>
                         <input type="email" name="email" placeholder="leo@gmail.com" required>
                     </div>
                     <div class="form-box">
-                        <i>
-                            <h4>Phone number</h4>
-                        </i>
-                        <input type="number" name="phoneNumber" placeholder="+ 1 432 555 00 44" min="12" max="18"
-                            pattern="\d+">
+                        <h4>Phone number</h4>
+                        <input type="tel" name="phoneNumber" placeholder="+ 1 432 555 00 44" pattern="\d+">
                     </div>
-
                 </div>
                 <div class="center column border--bottom">
-
                     <div class="form-box">
-                        <i>
-                            <h4>Skype</h4>
-                        </i>
+                        <h4>Skype</h4>
                         <input type="email" name="skype" placeholder="Leonardo.D">
                     </div>
                     <div class="form-box">
-                        <i>
-                            <h4>ICQ</h4>
-                        </i>
+                        <h4>ICQ</h4>
                         <input type="text" name="icq">
                     </div>
                     <div class="form-box">
-                        <i>
-                            <h4>Msn</h4>
-                        </i>
+                        <h4>Msn</h4>
                         <input type="email" name="msn">
                     </div>
-
                 </div>
                 <div class="center column border--bottom">
-
                     <div class="form-box">
-                        <i>
-                            <h4>Wallet</h4>
-                        </i>
+                        <h4>Wallet</h4>
                         <input type="text" name="wallet">
                     </div>
-
                 </div>
                 <div class="center column border--bottom">
-
                     <div class="form-box">
-                        <i>
-                            <h4>Password</h4>
-                        </i>
+                        <h4>Password</h4>
                         <input type="password" name="password" required>
                     </div>
                     <div class="form-box">
-                        <i>
-                            <h4>Repeat</h4>
-                        </i>
+                        <h4>Repeat</h4>
                         <input type="password" name="repeat" required>
                     </div>
-
                 </div>
                 <div class="center">
                     <input class="btn btn--primary btn--position" type="submit" form="myform" value="Save" />
@@ -292,72 +261,72 @@
                     <tr class="detail-row">
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Tracker name</h4>
+                                <span>Tracker name</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Initiated date</h4>
+                                <span>Initiated date</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Visits</h4>
+                                <span>Visits</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Unique</h4>
+                                <span>Unique</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Singups</h4>
+                                <span>Singups</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>FTD</h4>
+                                <span>FTD</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Depositors</h4>
+                                <span>Depositors</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Deposits ($)</h4>
+                                <span>Deposits ($)</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Payout ($)</h4>
+                                <span>Payout ($)</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Turnover</h4>
+                                <span>Turnover</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="table-head">
                             <div class="btn-box btn">
-                                <h4>Deal</h4>
+                                <span>Deal</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row1">
                         <td class="detail__text">aff/sam_test</td>
                         <td class="detail__text">17/08/02 (12:58)</td>
                         <td class="detail__text">232</td>
@@ -370,7 +339,7 @@
                         <td class="detail__text">421.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row2">
                         <td class="detail__text">aff/leo_test</td>
                         <td class="detail__text">15/08/02 (12:58)</td>
                         <td class="detail__text">232</td>
@@ -383,7 +352,7 @@
                         <td class="detail__text">421.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row3">
                         <td class="detail__text">aff/sam_test</td>
                         <td class="detail__text">17/08/02 (12:58)</td>
                         <td class="detail__text">112</td>
@@ -396,7 +365,7 @@
                         <td class="detail__text">522.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row4">
                         <td class="detail__text">aff/leo_test</td>
                         <td class="detail__text">33/08/02 (12:58)</td>
                         <td class="detail__text">232</td>
@@ -409,7 +378,7 @@
                         <td class="detail__text">421.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row5">
                         <td class="detail__text">aff/sam_test</td>
                         <td class="detail__text">17/08/02 (12:58)</td>
                         <td class="detail__text">112</td>
@@ -422,7 +391,7 @@
                         <td class="detail__text">522.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row6">
                         <td class="detail__text">aff/leo_test</td>
                         <td class="detail__text">13/08/02 (12:58)</td>
                         <td class="detail__text">232</td>
@@ -435,7 +404,7 @@
                         <td class="detail__text">421.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row7">
                         <td class="detail__text">aff/sam_test</td>
                         <td class="detail__text">17/08/02 (12:58)</td>
                         <td class="detail__text">112</td>
@@ -448,7 +417,7 @@
                         <td class="detail__text">522.342.00</td>
                         <td class="detail__text">cpl (200)</td>
                     </tr>
-                    <tr class="detail-row" id="detail-row">
+                    <tr class="detail-row" id="detail-row8">
                         <td class="detail__text">aff/leo_test</td>
                         <td class="detail__text">19/08/02 (12:58)</td>
                         <td class="detail__text">232</td>
@@ -497,25 +466,25 @@
                     <tr class="payout-row">
                         <th class="payout-head">
                             <div class="payout-btn btn">
-                                <h4>Date</h4>
+                                <span>Date</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="payout-head">
                             <div class="payout-btn btn">
-                                <h4>Amount ($)</h4>
+                                <span>Amount ($)</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="payout-head">
                             <div class="payout-btn btn">
-                                <h4>Deal</h4>
+                                <span>Deal</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
                         <th class="payout-head">
                             <div class="payout-btn btn">
-                                <h4>Account</h4>
+                                <span>Account</span>
                                 <i class="header__icon icon-arrow-up"></i>
                             </div>
                         </th>
@@ -527,43 +496,43 @@
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row1">
                         <td class="payout__text">15/08/02 (12:58)</td>
                         <td class="payout__text">34,425.00</td>
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row2">
                         <td class="payout__text">17/08/02 (12:58)</td>
                         <td class="payout__text">22,415.00</td>
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row3">
                         <td class="payout__text">33/08/02 (12:58)</td>
                         <td class="payout__text">34,425.00</td>
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row4">
                         <td class="payout__text">17/08/02 (12:58)</td>
                         <td class="payout__text">22,415.00</td>
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row5">
                         <td class="payout__text">13/08/02 (12:58)</td>
                         <td class="payout__text">34,425.00</td>
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row6">
                         <td class="payout__text">17/08/02 (12:58)</td>
                         <td class="payout__text">22,415.00</td>
                         <td class="payout__text">cpl (200)</td>
                         <td class="payout__text">bank</td>
                     </tr>
-                    <tr class="payout-row" id="payout-row">
+                    <tr class="payout-row" id="payout-row7">
                         <td class="payout__text">19/08/02 (12:58)</td>
                         <td class="payout__text">34,425.00</td>
                         <td class="payout__text">cpl (200)</td>
