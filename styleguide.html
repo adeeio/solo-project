@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <title>styleguide</title>
     <meta charset="UTF-8">
@@ -9,341 +10,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<body style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+    <h1>Font Stacks</h1>
+    <p>Primary Font</p>
+    <p class="primary-font">"Open Sans", Helvetica, Arial;</p><br>
+    <p>Secondary Font</p>
+    <p class="secondary-font">'Roboto Condensed', sans-serif;</p><br>
+    <p>Logo Font</p>
+    <p class="logo-font">'Indie Flower', cursive;</p><br><br>
 
-
-
-    <body style="display: flex; justify-content: center; align-items: center; flex-direction: column">
-        
-        <!--    NAVBAR    -->
-        <nav class="navbar" id="navbar">
-                <div class="box">
-                    <a href="#" class="box__logo">Just do it</a>
-                    <span class="burger" id="js-navbar-toggle">
-                        <i class="burger__item fas fa-bars"></i>
-                    </span>
-                </div>
-                <div class="mySidebar" id="mySidebar">
-                    <ul class="list">
-                        <li class="item"><a class="active" href="#general"><span
-                                    class="item__icon icon-general"></span>General</a>
-                        </li>
-                        <li class="item"><a href="#details"><span class="item__icon icon-details"></span>Detalis</a></li>
-                        <li class="item"><a href="#links"><span class="item__icon icon-links"></span>Links</a></li>
-                        <li class="item"><a href="#banners"><span class="item__icon icon-banners"></span>Banners</a></li>
-                        <li class="item"><a href="#personal-data"><span class="item__icon icon-personaldata"></span>Personal
-                                data</a>
-                        </li>
-                        <li class="item"><a href="#payout"><span class="item__icon icon-payout"></span>Payout</a></li>
-                        <li class="item"><a href="#postback"><span class="item__icon icon-postback"></span>Postback</a></li>
-                    </ul>
-                    <div class="mobile">
-                        <div class="mobile__underLine"></div>
-                        <div class="mobile__manager">YOUR MANAGER</div>
-                        <div class="chat">
-                            <div class="avatar">
-                                <div class="avatar__dot"></div>
-                            </div>
-                            <div class="chat__nick">Mikhael E.</div>
-                        </div>
-                    </div>
-        
-                </div>
-        
-        
-            </nav>
-
-
-
-             <!--TOP BAR-->
-
-    <div class="topbar">
-            <div class="element">
-                <span class="element__icon  icon--borderLeft icon-wallet"></span>
-                <span class="element__cash">$1,500.00</span>
-                <span class="element__icon icon--borderRight icon-arrow-down-small"></span>
-                <span class="element__icon icon--borderRight icon-notification"></span>
-                <span class="element__icon icon-profile"></span>
-                <span class="element__username">Leonardo Dicaprio</span>
-                <span class="element__icon icon--borderLeft icon-quit"></span>
-            </div>
+    <h1>Colors</h1>
+    <div class="clrs">
+        <div>
+            <div class="color1"></div>
+            <p>paragraph <br>#605f5f</p>
+        </div>
+        <div>
+            <div class="color2"></div>
+            <p>danger <br>rgb(255, 0, 0);</p>
+        </div>
+        <div>
+            <div class="color3"></div>
+            <p>secondary <br>#ADADAD</p>
+        </div>
+        <div>
+            <div class="color4"></div>
+            <p>page shadow <br>#E3E3E3;</p>
+        </div>
+        <div>
+            <div class="color5"></div>
+            <p>detali<br> #f58220;</p>
+        </div>
+        <div>
+            <div class="color6"></div>
+            <p>detali hover <br>#FFa200;</p>
+        </div>
+        <div>
+            <div class="color7"></div>
+            <p>user color<br> #56819f;</p>
+        </div>
+        <div>
+            <div class="color8"></div>
+            <p>user hover<br> #7ec9ff;</p>
+        </div>
+        <div>
+            <div class="color9"></div>
+            <p>primary icon <br>#f5f5f2;</p>
+        </div>
+        <div>
+            <div class="color10"></div>
+            <p>paragraph dark<br> #696969;</p>
+        </div>
+        <div>
+            <div class="color11"></div>
+            <p>active green <br>rgb(2, 158, 2);</p>
         </div>
 
-            <!--  BOXDATE  -->
-            <div class="date">
-                    <div class="boxDate">
-                        <div class="boxDate__start">16.05.2016</div>
-                        <div class="boxDate__split"></div>
-                        <div class="boxDate__finish">16.05.2016</div>
-                        <span class="boxDate__icon icon-calendar"></span>
-                    </div>
-                    <span class="date__icon icon-refresh"></span>
-                </div>
+    </div><br>
+    <h1>Section Date</h1>
+    <div class="date">
+        <div class="boxDate">
+            <div class="boxDate__start">16.05.2016</div>
+            <div class="boxDate__split"></div>
+            <div class="boxDate__finish">16.05.2016</div>
+            <span class="boxDate__icon icon-calendar"></span>
+        </div>
+    </div><br>
+    <h1>Buttons</h1>
+    <div class="btn btn--primary"> + add new</div>
+    <div class="btn btn--primary">save</div>
+    <span class="icon-refresh"></span><br>
+    <h1>Pagination</h1><br>
+    <ul class="pager">
+        <li class="pager__item"><a href="">&#60;</a></li>
+        <li class="pager__item active"><a href="">1</a></li>
+        <li class="pager__item"><a href="">2</a></li>
+        <li class="pager__item"><a href="">3</a></li>
+        <Li class="pager__item"><a href="">4</a></Li>
+        <li class="pager__item"><a href="">5</a></li>
+        <li class="pager__item"><a href="">6</a></li>
+        <li class="pager__item"><a href="">7</a></li>
+        <li class="pager__item"><a href="">8</a></li>
+        <li class="pager__item"><a href="">9</a></li>
+        <Li class="pager__item"><a href="">&#62;</a></Li>
+    </ul><br>
+    <h1>table</h1><br>
+    <table>
+        <tr>
+            <th>th</th>
+            <th>th</th>
+            <th>th</th>
+            <th>th</th>
 
-            <!-- BTN -->
-            <div class="btn">
-                    <span class="btn__dot"></span>
-                    <h3>Signups</h3>
-                </div>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+            <td>td</td>
+        </tr>
+    </table><br>
+    <h1>Font sizes</h1><br>
+    <p class="style-guide-paragraph">primary paragraph size</p><br>
+    <p class="style-guide-paragraph-small">small paragraph size</p><br>
 
-                <!--- PAGE HEADER -->
-                <div class="text">
-                    <h3>GENERAL STATISCTIC</h3>
-                </div>
+    <h1>Links</h1><br>
+    <td><a class="link--style" href="#">http://www.website.com/horizontal.gif</a></td>
+    <br><br>
 
-              <!-- LINKS TABLE-->
-
-              <table class="myTable">
-                <tr class="table-row">
-                    <td>Banner main</td>
-                    <td><a href="#">http://www.website.com/bannermain.gif</a></td>
-                    <td><span class="icon-links"></span></td>
-                    <td><span class="icon-trash"></span></td>
-                </tr>
-                <tr class="table-row">
-                    <td>Sign up banner</td>
-                    <td><a href="#">http://www.website.com/singup.gif</a></td>
-                    <td><span class="icon-links"></span></td>
-                    <td><span class="icon-trash"></span></td>
-                </tr>
-                <tr class="table-row">
-                    <td>Banner left side</td>
-                    <td><a href="#">http://www.website.com/leftside.gif</a></td>
-                    <td><span class="icon-links"></span></td>
-                    <td><span class="icon-trash"></span></td>
-                </tr>
-                <tr class="table-row">
-                    <td>Vertical banner</td>
-                    <td><a href="#">http://www.website.com/vert.gif</a></td>
-                    <td><span class="icon-links"></span></td>
-                    <td><span class="icon-trash"></span></td>
-                </tr>
-                <tr class="table-row">
-                    <td>Front banner</td>
-                    <td><a href="#">http://www.website.com/front.gif</a></td>
-                    <td><span class="icon-links"></span></td>
-                    <td><span class="icon-trash"></span></td>
-                </tr>
-                <tr class="table-row">
-                    <td>Horizontal banner</td>
-                    <td><a href="#">http://www.website.com/horizontal.gif</a></td>
-                    <td><span class="icon-links"></span></td>
-                    <td><span class="icon-trash"></span></td>
-                </tr>
-            </table>
+    <h1>Headers</h1>
+    <br>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <br><br>
+    <h1>Input Field</h1>
+    <br>
+    <input type="text" name="firstname" placeholder="Leonardo" required minlength="2" maxlength="16">
+    <br><br>
+    <h1>Icons</h1>
+    <br>
+    <div>
+        <span class="icon-links"></span>
+        <span class="icon-trash"></span>
+        <span class="icon-wallet"></span>
+        <span class="icon-arrow-down-small"></span>
+        <span class="icon-profile"></span>
+        <span class="icon-quit"></span>
+        <span class="icon-postback"></span>
+        <span class="icon-payout"></span>
+        <span class="icon-personaldata"></span>
+        <span class="icon-banners"></span>
+        <span class="icon-links"></span>
+        <span class="icon-details"></span>
+        <span class="icon-general"></span>
+    </div>
+    <br><br>
 
 
-            <!--- FORM  -->
-            <div class="center">
-                    <form action="/action_page.php">
-                        <div class="form-box">
-                            <h4>Name</h4>
-                            <input type="text" name="firstname" value="Leonardo">
-                        </div>
-                        <div class="form-box">
-                                <h4>Surname</h4>
-                                <input type="text" name="surname" value="Dicaprio">
-                        </div>
-                        <div class="form-box">
-                            <h4>E-mail</h4>
-                            <input type="text" name="email" value="leo@gmail.com">
-                        </div>
-                        <div class="form-box">
-                                <h4>Phone number</h4>
-                                <input type="tel" name="phoneNumber" placeholder="1 432 555 00 44">
-                        </div>
-                    </form>
-                </div>
-                <!-- PAGINATION-->
-                <ul class="pager">
-                    <li class="pager__item"><a href="">&#60;</a></li>
-                    <li class="pager__item active"><a href="">1</a></li>
-                    <li class="pager__item"><a href="">2</a></li>
-                    <li class="pager__item"><a href="">3</a></li>
-                    <Li class="pager__item"><a href="">4</a></Li>
-                    <li class="pager__item"><a href="">5</a></li>
-                    <li class="pager__item"><a href="">6</a></li>
-                    <li class="pager__item"><a href="">7</a></li>
-                    <li class="pager__item"><a href="">8</a></li>
-                    <li class="pager__item"><a href="">9</a></li>
-                    <Li class="pager__item"><a href="">&#62;</a></Li>
-                </ul>
 
-                <table class="detail-table">
-                        <tr class="detail-row">
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Tracker name</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Initiated date</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Visits</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Unique</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Singups</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>FTD</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Depositors</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Deposits ($)</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Payout ($)</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Turnover</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                            <th class="table-head">
-                                <div class="btn-box btn">
-                                    <span>Deal</span>
-                                    <i class="header__icon icon-arrow-up"></i>
-                                </div>
-                            </th>
-                        </tr>
-                        <tr class="detail-row" id="detail-row1">
-                            <td class="detail__text">aff/sam_test</td>
-                            <td class="detail__text">17/08/02 (12:58)</td>
-                            <td class="detail__text">232</td>
-                            <td class="detail__text">114</td>
-                            <td class="detail__text">12</td>
-                            <td class="detail__text">6</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">34,425.00</td>
-                            <td class="detail__text">234.00</td>
-                            <td class="detail__text">421.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row2">
-                            <td class="detail__text">aff/leo_test</td>
-                            <td class="detail__text">15/08/02 (12:58)</td>
-                            <td class="detail__text">232</td>
-                            <td class="detail__text">114</td>
-                            <td class="detail__text">12</td>
-                            <td class="detail__text">6</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">34,425.00</td>
-                            <td class="detail__text">234.00</td>
-                            <td class="detail__text">421.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row3">
-                            <td class="detail__text">aff/sam_test</td>
-                            <td class="detail__text">17/08/02 (12:58)</td>
-                            <td class="detail__text">112</td>
-                            <td class="detail__text">100</td>
-                            <td class="detail__text">22</td>
-                            <td class="detail__text">4</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">22,415.00</td>
-                            <td class="detail__text">341.00</td>
-                            <td class="detail__text">522.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row4">
-                            <td class="detail__text">aff/leo_test</td>
-                            <td class="detail__text">33/08/02 (12:58)</td>
-                            <td class="detail__text">232</td>
-                            <td class="detail__text">114</td>
-                            <td class="detail__text">12</td>
-                            <td class="detail__text">6</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">34,425.00</td>
-                            <td class="detail__text">234.00</td>
-                            <td class="detail__text">421.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row5">
-                            <td class="detail__text">aff/sam_test</td>
-                            <td class="detail__text">17/08/02 (12:58)</td>
-                            <td class="detail__text">112</td>
-                            <td class="detail__text">100</td>
-                            <td class="detail__text">22</td>
-                            <td class="detail__text">4</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">22,415.00</td>
-                            <td class="detail__text">341.00</td>
-                            <td class="detail__text">522.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row6">
-                            <td class="detail__text">aff/leo_test</td>
-                            <td class="detail__text">13/08/02 (12:58)</td>
-                            <td class="detail__text">232</td>
-                            <td class="detail__text">114</td>
-                            <td class="detail__text">12</td>
-                            <td class="detail__text">6</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">34,425.00</td>
-                            <td class="detail__text">234.00</td>
-                            <td class="detail__text">421.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row7">
-                            <td class="detail__text">aff/sam_test</td>
-                            <td class="detail__text">17/08/02 (12:58)</td>
-                            <td class="detail__text">112</td>
-                            <td class="detail__text">100</td>
-                            <td class="detail__text">22</td>
-                            <td class="detail__text">4</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">22,415.00</td>
-                            <td class="detail__text">341.00</td>
-                            <td class="detail__text">522.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                        <tr class="detail-row" id="detail-row8">
-                            <td class="detail__text">aff/leo_test</td>
-                            <td class="detail__text">19/08/02 (12:58)</td>
-                            <td class="detail__text">232</td>
-                            <td class="detail__text">111</td>
-                            <td class="detail__text">12</td>
-                            <td class="detail__text">6</td>
-                            <td class="detail__text">3</td>
-                            <td class="detail__text">34,425.00</td>
-                            <td class="detail__text">234.00</td>
-                            <td class="detail__text">421.342.00</td>
-                            <td class="detail__text">cpl (200)</td>
-                        </tr>
-                    </table>
+
+
+
+
+
 
 
 </body>
-</html>
 
+</html>

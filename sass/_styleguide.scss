@@ -1,0 +1,86 @@
+
+
+
+.primary-font {
+    font-family: "Open Sans", Helvetica, Arial;
+}
+
+.secondary-font {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo-font {
+    font-family: 'Indie Flower', cursive;
+}
+
+.clrs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clrs div {
+    width: 120px;
+    height: 100px;
+
+}
+
+div[class^="color"] {
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+}
+
+.color1 {
+    background: #605f5f;
+}
+
+.color2 {
+    background:  rgb(255, 0, 0);
+}
+
+.color3 {
+    background: #ADADAD;
+}
+
+.color4 {
+    background: #E3E3E3;
+}
+
+.color5 {
+    background: #f58220;
+}
+
+.color6 {
+    background: #FFa200;
+}
+
+.color7 {
+    background: #56819f;
+}
+
+.color8 {
+    background:  #7ec9ff;
+}
+
+.color9 {
+    background: #f5f5f2;
+}
+
+.color10 {
+    background: #696969;
+}
+
+.color11 {
+    background: rgb(2, 158, 2);
+}
+
+.style-guide-paragraph {
+    font-size: $paragraph-font-size;
+}
+
+.style-guide-paragraph-small {
+    font-size: $paragraph-primary--small;
+}
+
