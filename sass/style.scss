@@ -58,6 +58,10 @@ body {
   font-size: 20px;
 }
 
+.burger {
+  display: none;
+}
+
 .box__logo {
   font-size: 26px;
   text-decoration: none;
@@ -134,7 +138,7 @@ body {
 }
 
 .avatar {
-  background-image: url("/images/90.jpg");
+  background-image: url("/output/90.jpg");
   height: 45px;
   width: 45px;
   background-position: center;
@@ -727,6 +731,10 @@ input[type="email"] {
     }
   }
 
+  .burger {
+    display: flex;
+  }
+
   .mySidebar {
     display: flex;
     justify-content: center;
@@ -847,7 +855,7 @@ input[type="email"] {
   }
 
   .table {
-    overflow: hidden;
+    overflow: auto;
   }
 
   .table-row,
