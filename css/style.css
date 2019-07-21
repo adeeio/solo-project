@@ -29,48 +29,56 @@ div[class^="color"] {
   margin: 3px;
 }
 
-.color1 {
+.paragraph-color {
   background: #605f5f;
 }
 
-.color2 {
+.danger-color {
   background: red;
 }
 
-.color3 {
+.secondary-color {
   background: #ADADAD;
 }
 
-.color4 {
+.page-shadow-color {
   background: #E3E3E3;
 }
 
-.color5 {
+.detail-color {
   background: #f58220;
 }
 
-.color6 {
+.datail-hover-color {
   background: #FFa200;
 }
 
-.color7 {
+.user-color {
   background: #56819f;
 }
 
-.color8 {
+.user-hover-color {
   background: #7ec9ff;
 }
 
-.color9 {
+.primary-icon-color {
   background: #f5f5f2;
 }
 
-.color10 {
+.paragraph-dark-color {
   background: #696969;
 }
 
-.color11 {
+.active-green-color {
   background: #029e02;
+}
+
+.style-guide-paragraph {
+  font-size: 16px;
+}
+
+.style-guide-paragraph-small {
+  font-size: 14px;
 }
 
 /* Colors */
@@ -927,7 +935,7 @@ input[type="email"]:invalid {
     margin-right: 20px;
   }
   .burger {
-    display: flex;
+    display: none;
   }
   .mySidebar {
     display: flex;
