@@ -1,8 +1,6 @@
+@import "normalize";
 @import "styleguide";
 @import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
 @import "Glyphter";
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap");
 
@@ -196,19 +194,7 @@ body {
   }
 }
 
-.icon--borderLeft {
-  border-left: 2px solid $page-shadow;
-}
-
-.icon--borderRight {
-  border-right: 2px solid $page-shadow;
-}
-
-.border--left {
-  border-left: 2px solid $page-shadow;
-}
-
-.border--right {
+.separator {
   border-right: 2px solid $page-shadow;
 }
 
@@ -231,6 +217,7 @@ body {
 .element__cash {
   font-weight: 600;
   font-family: $paragraph-font;
+  padding-left: 8px;
 }
 
 .icon-arrow-down-small {
@@ -733,11 +720,11 @@ input[type="email"] {
   }
 
   .burger {
-    display: none;
+    display: flex;
   }
 
   .mySidebar {
-    display: flex;
+    display: none;
     justify-content: center;
     ul {
       width: 100%;
@@ -755,7 +742,7 @@ input[type="email"] {
   }
 
   .visible {
-    display: none;
+    display: flex;
   }
 
   /* BODY */
